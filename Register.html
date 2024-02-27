@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <hr>
+    <a href="index.html">Back</a>
+    <hr>
+    <h2>New Student Registration</h2>
+    <form action="Process.php" method="post">
+        Name<br>
+        <input type="text" name="name" id="name" required /><br> 
+        Birth Date<br>
+        <input type="date" name="birth_date" id="birth_date" required /><br>
+        <br>
+        Gender<br>
+        <input type="radio" name="gender" id="male" value="m" checked />Male<br>
+        <input type="radio" name="gender" id="female" value="f"/>Female<br>
+
+        
+        Jalur Penerimaan<br>
+        <select name="jp" id="jp">
+            <option value="noTest">Jalur Tanpa Tes</option>
+            <option value="test">Jalur Tes</option>
+            <option value="bea">Beasiswa</option>
+        </select><br>
+        <br>
+    <button type="Submit">Save</button><br>
+    </form>
+
+</body>
+</html>
