@@ -8,24 +8,57 @@ body {
     color: darkviolet;
 }
 
-.col {
-    width: 25%;
-    float: left;
-}
 .img{
     width: 100%;
-    border-radius: 50%;
 }
 
 .p-1{
     padding: 10px;
-    box-sizing: border-box;
 }
 .col-25{
     width:25%;
     float: left;
 }
 .col-50{
-    width:50%;
-    float:left;
+    width:45%;
+    float: left;
+}
+.col-3{
+    width: 28%;
+    float: left;
+}
+.circle{
+    border-radius: 50%;
+}
+.rounded{
+    border-radius: 10%;
+}
+/*Media query*/
+/* tablet : layout yang ditampilkan 2 kolom */
+
+@media screen and (min-width: 400px){
+    body{
+        background-color: yellowgreen;
+    }
+    .col-sm-6{
+        width:50%;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 700px){
+    body{
+        background-color: red;
+    }
+    .col{
+        width: 20%;
+        float: left;
+    }
+
+
+}
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
 }
